@@ -6,12 +6,13 @@
 
 shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了一些策略。
 
+建议使用Quantumult以达到最佳使用体验
+
 ---
 
 * [可实现功能](#function)
 * 导入方式
     * [URL](#remote-files)
-    * [JSBox](#jsbox)
 * [证书的安装及信任](#mitm-1)
 * [Android SSR ACL](#android-ssr-acl)
 * [浏览器广告](#browser-ads)
@@ -22,6 +23,7 @@ shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了
 * [配置文件样例](#配置文件样例)
 * [鸣谢](#鸣谢)
 * [License](#license)
+* [更新日志](#更新日志)
 
 ---
 
@@ -46,14 +48,9 @@ shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了
 - [x] 所有国内网站直线连接
 - [x] Apple 服务加速（App Store、Apple Music、Apple流媒体、iCloud备份、iCloud Drive、iTunes 等）
 - [x] 国外常用网站加速（Google/Youtube/Twitter/Facebook/instagram/wikipedia/Github 等）
+- [x] 游戏分类加速代理
 
 ---
-
-### JSBox
-
-````
-Surge：https://xteko.com/redir?name=Rules-lhie1&url=https://raw.githubusercontent.com/Fndroid/jsbox_script/master/Rules-lhie1/.output/Rules-lhie1.box
-````
 
 ---
 
@@ -101,6 +98,8 @@ Telegram：[shilapiyyg](https://telegram.me/shilapiyyg)
 
 规则更新通知（新特性/教程/说明）：[http://t.me/DrugRules](http://t.me/DrugRules)
 
+[](https://raw.githubusercontent.com/shilapi/drug-rules/master/images/payme.JPG)
+
 ---
 
 ### Android SSR ACL
@@ -131,15 +130,6 @@ Adguard：https://adguard.com/en/welcome.html
 ---
 
 ### Q&A
-
-#### Surge 开启共享模式
-````
-Surge 在增加了代理共享模式，只需要开启就能让 Wi-Fi 网络中的其他设备通过这台 iPhone 代理访问网络
-
-到高级设置中开启 Allow Wi-Fi Access ，或者直接修改配置文件，添加一行参数 allow-wifi-access = true
-
-其他 Wi-Fi 网络环境下的设备可以输入已经开启共享代理的 Surge 设备的 IP 地址和端口号，（技巧：Surge Log 中能看到开启后本机的 IP 地址和监听端口）将 IP 地址填写到需要共享设备的 Wi-Fi 信息的 HTTP 代理里即可
-````
 
 #### 🍃 Proxy & 🍂 Domestic & ☁️ Others & 🍎 Only
 ````
@@ -179,16 +169,6 @@ Surge 在增加了代理共享模式，只需要开启就能让 Wi-Fi 网络中�
 不会，此类应用每次加载规则时都会生成一棵搜索树，可以理解为对主机名从后往前的有限状态机 DFA，并不是逐行匹配，并且对每次的匹配结果还有个哈希缓存。换句话说，2000 行的规则和 50 行的规则均为同一量级的时间复杂度 O(1)。
 ````
 
-#### Surge 2 提示激活过多设备
-````
-Surge 2的防盗版策略为单次购买后，在最近 180 天内，若已激活的设备数量超过 10 台，则将拒绝激活新设备（家庭共享将共享购买者账号的 10 次限制）。如特殊情况请发送邮件联系作者重制。
-````
-
-#### Surge 3 提示规则过多
-````
-由于我维护的规则大部分用于屏蔽广告，无法进行精简，如果介意可以在通过 JSBox 生成规则时将屏蔽广告功能关闭，如果不介意请到更多 - 警告信息，关闭警告即可。
-````
-
 #### MitM 是什么？
 ````
 用于解密 HTTPS 流量（即 Man-in-the-middle attack 简称 MitM）。
@@ -213,11 +193,6 @@ Shadowrocket 支持两种测速方式（ICMP/TCP），默认为 ICMP 模式（�
 Quantumult 是从目标 policy 返回 http response header 数据包的时间
 
 准确度：Surge -> Quantumult -> Shadowrocket
-````
-
-#### 为什么 Surge 无法屏蔽优酷广告？
-````
-优酷为了防止广告请求被拦截，强制不通过代理访问。其他同类应用使用的是 HTTP 首包识别，所以在 TUN 模式下也能识别到该请求。Surge 是完整的 HTTP Proxy Server，在 TUN 模式下不会进行 HTTP 解析尝试。所以不会识别到这个请求。但是其他同类应用使用的方式，在 HTTP 请求使用 Keep-Alive 时可能会出现问题，无法识别到后续的请求。
 ````
 
 #### 三者之间到底有什么不同？
@@ -247,8 +222,6 @@ Surge MitM：https://medium.com/@Blankwonder/5281d8ace79d
 ````
 • iOS
 
-Surge：https://appsto.re/cn/D0Q_9.i
-
 Shadowrocket (R)：https://appsto.re/cn/UDjM3.i
 
 Quantumult（R）：https://itunes.apple.com/us/app/quantumult/id1252015438?mt=8
@@ -268,8 +241,7 @@ ShadowsocksX-R (R)：http://omgib13x8.bkt.clouddn.com/ssr-mac.dmg
 Flora：https://github.com/huacnlee/flora-kit
 
 Specht Lite：https://github.com/zhuhaow/SpechtLite/releases
-        
-Surge：http://nssurge.com
+
 
 • Windows
 
@@ -287,11 +259,7 @@ ShadowsocksR (R)：http://omgib13x8.bkt.clouddn.com/ssr-win.7z
 ---
 
 #### 教程 / 说明：
-````
-Surge for iOS：https://medium.com/@scomper/a1533c10e80b
-    
-Surge for macOS：https://medium.com/@scomper/bb7cf735b1b8
-    
+````    
 Shadowrocket for iOS：http://matrix.sspai.com/p/c113cba0
     
 SSR for Windows：https://ocvpn.wordpress.com/2016/10/15/shadowsocksr-for-windows设置教程
@@ -316,3 +284,7 @@ SSR for Android：https://yhyy135.github.io/how-to-use-ssr-android/
 
 ### License
 * 可以拷贝、转发，但是必须提供原作者信息，同时也不能将本项目用于商业用途。
+
+---
+### 更新日志
+2020.11.22：放弃surge的规则更新 
