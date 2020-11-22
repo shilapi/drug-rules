@@ -3,13 +3,11 @@
 ### 简介
 
 本项目最早是 Fork [scomper/surge.conf](https://gist.github.com/scomper/915b04a974f9e11952babfd0bbb241a8) 定制修改而来。
-shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了一些策略
+
+shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了一些策略。
 
 ---
-* [兼容](#application)
-	* Surge
-	* Shadowrocket
-	* Quantumult
+
 * [可实现功能](#function)
 * 导入方式
     * [URL](#remote-files)
@@ -24,17 +22,6 @@ shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了
 * [配置文件样例](#配置文件样例)
 * [鸣谢](#鸣谢)
 * [License](#license)
-
----
-
-### Application
-
-Configuration | Source | Group
-----|----|----
-Rules | [Rules Channel](https://t.me/RuleNews) | [Rules](https://t.me/lhie1x)
-Surge | [@lhie1](https://t.me/lhie1) | [Surge](https://t.me/loveapps)
-Shadowrocket | [@lhie1](https://t.me/lhie1) | [Shadowrcoekt](https://t.me/ShadowrocketApp)
-Quantumult | [@Jacky Y](https://t.me/WatanabeMayu) | [Quantumult](https://t.me/quantumultapp)
 
 ---
 
@@ -73,12 +60,11 @@ Surge：https://xteko.com/redir?name=Rules-lhie1&url=https://raw.githubuserconte
 ### Remote Files
 
 ````
-Shadowrocket：https://raw.githubusercontent.com/lhie1/Rules/master/Shadowrocket.conf
+Shadowrocket：https://raw.githubusercontent.com/shilapi/drug-rules/master/Shadowrocket.conf
 
+Quantumult_Filter：https://raw.githubusercontent.com/shilapi/drug-rules/master/Quantumult/Quantumult.conf
 
-Quantumult_Filter：https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult.conf
-
-Quantumult_Rejection：https://raw.githubusercontent.com/lhie1/Rules/master/Quantumult/Quantumult_URL.conf
+Quantumult_Rejection：https://raw.githubusercontent.com/shilapi/drug-rules/master/Quantumult/Quantumult_URL.conf
 ````
 
 ---
@@ -105,21 +91,15 @@ iOS 9 以上的系统都需要在安装证书后到关于本机里信任证书�
 
 macOS：
 
-![](https://raw.githubusercontent.com/lhie1/Rules/master/images/macOS_MitM.jpg)
+![](https://raw.githubusercontent.com/shilapi/drug-rules/master/images/macOS_MitM.jpg)
 
 ---
 
 ### 关于
 
-微博：[lhie1](http://weibo.com/1748625493)
+Telegram：[shilapiyyg](https://telegram.me/shilapiyyg)
 
-Rules（规则讨论/交流）：[https://telegram.me/lhie1x](https://telegram.me/lhie1x)
-
-规则更新通知（新特性/教程/说明）：[http://t.me/RuleNews](http://t.me/RuleNews)
-
-长时间的维护和分享离不开大家的鼓励与支持，如果帮助到您，可以考虑捐赠，谢谢。
-
-![](https://raw.githubusercontent.com/lhie1/Rules/master/images/Pay.jpg)
+规则更新通知（新特性/教程/说明）：[http://t.me/DrugRules](http://t.me/DrugRules)
 
 ---
 
@@ -330,6 +310,7 @@ SSR for Android：https://yhyy135.github.io/how-to-use-ssr-android/
 * @unknownTokyo
 * @Jacky Y
 * @Fndroid
+* @maxduke
 
 ---
 
