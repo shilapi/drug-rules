@@ -3,6 +3,7 @@
 ### 简介
 
 本项目最早是 Fork [scomper/surge.conf](https://gist.github.com/scomper/915b04a974f9e11952babfd0bbb241a8) 定制修改而来。
+shilapi:由 https://github.com/maxduke/Rules-1 修改而来，增加并定制了一些策略
 
 ---
 * [兼容](#application)
