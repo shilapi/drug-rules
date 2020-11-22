@@ -98,7 +98,7 @@ Telegram：[shilapiyyg](https://telegram.me/shilapiyyg)
 
 规则更新通知（新特性/教程/说明）：[http://t.me/DrugRules](http://t.me/DrugRules)
 
-[](https://raw.githubusercontent.com/shilapi/drug-rules/master/images/payme.JPG)
+![](https://raw.githubusercontent.com/shilapi/drug-rules/master/images/payme.JPG)
 
 ---
 
